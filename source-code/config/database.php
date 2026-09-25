@@ -2,7 +2,7 @@
 
 try {
     $conn = new PDO(
-        "mysql:host=" . env('DB_HOST') . ";dbname=" . env('DB_NAME') . ";charset=utf8mb4",
+        "mysql:host=" . env('DB_HOST') . ";port=" . env('DB_PORT') . ";dbname=" . env('DB_NAME') . ";charset=utf8mb4",
         env('DB_USER'),
         env('DB_PASS'),
         [
