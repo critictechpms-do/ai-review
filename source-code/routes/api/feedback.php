@@ -1,5 +1,7 @@
 <?php
-ob_clean();
+if (ob_get_level() > 0) {
+    ob_clean();
+}
 header('Content-Type: application/json');
 
 // Check if user is logged in
