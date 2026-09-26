@@ -53,7 +53,7 @@ CREATE TABLE feedbacks (
 
 -- Keep platform_settings unchanged
 CREATE TABLE platform_settings (
-    whatsapp VARCHAR(20) NOT NULL,
+    whatsapp VARCHAR(20) NOT NULL PRIMARY KEY,
     details JSON DEFAULT NULL
 );
 
